@@ -6,6 +6,7 @@ export const StyledHeader = styled.header`
   justify-content: flex-end;
   height: 57px;
   background-color: #2d2929;
+  z-index: 999;
 `;
 
 export const Hamburger = styled.img`
