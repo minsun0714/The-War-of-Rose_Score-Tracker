@@ -14,11 +14,13 @@ import {
   setPersistence,
   browserSessionPersistence,
 } from "firebase/auth";
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Initialize Firebase Authentication and get a reference to the service
 
 function Home() {
+  const navigate = useNavigate();
+
   const handleGoogleLogin = () => {
     const provider = new GoogleAuthProvider();
     const auth = getAuth(app);
@@ -31,6 +33,7 @@ function Home() {
 
           // The signed-in user info.
           const user = result.user;
+          navigate("/mypage");
         })
         .catch((error) => {
           console.log(error.message);
