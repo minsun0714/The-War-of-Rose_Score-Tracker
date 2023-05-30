@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+import { getAuth, signOut } from "firebase/auth";
 import { GameTitleContainer, GameTitle } from "../Home/HomeStyle";
 import {
   StartButtonContainer,
@@ -8,6 +10,19 @@ import {
 
 function MyPage() {
   const userName = sessionStorage.getItem("userName");
+  const navigate = useNavigate();
+
+  const handleGoogleLogout = () => {
+    const auth = getAuth();
+    signOut(auth)
+      .then(() => {
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <>
       <GameTitleContainer>
@@ -18,7 +33,7 @@ function MyPage() {
         <StartBtn>Get Score</StartBtn>
       </StartButtonContainer>
       <LogoutButtonContainer>
-        <GoogleLogoutBtn>log out</GoogleLogoutBtn>
+        <GoogleLogoutBtn onClick={handleGoogleLogout}>log out</GoogleLogoutBtn>
       </LogoutButtonContainer>
     </>
   );
