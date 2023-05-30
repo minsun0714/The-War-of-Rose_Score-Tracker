@@ -30,8 +30,9 @@ function Home() {
           const token = credential?.accessToken;
           // The signed-in user info.
           const user = result.user;
-          if (user.displayName) {
+          if (user.displayName && token) {
             sessionStorage.setItem("userName", user.displayName);
+            sessionStorage.setItem("isLoggedIn", "true");
           }
           navigate("/mypage");
         })
