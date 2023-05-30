@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Inika', sans-serif;
 
  }
-
+ 
  body{
    background-image: url("/rose background.png") ;
  }
