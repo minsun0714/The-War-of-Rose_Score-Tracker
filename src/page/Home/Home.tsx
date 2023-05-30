@@ -6,15 +6,49 @@ import {
   GoogleLogoBtn,
   GoogleLoginBtn,
 } from "./HomeStyle";
+import app from "../../service/firebase";
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  setPersistence,
+  browserSessionPersistence,
+} from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleGoogleLogin = () => {
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth(app);
+    setPersistence(auth, browserSessionPersistence).then(() => {
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const token = credential?.accessToken;
+          // The signed-in user info.
+          const user = result.user;
+          if (user.displayName && token) {
+            sessionStorage.setItem("userName", user.displayName);
+            sessionStorage.setItem("isLoggedIn", "true");
+          }
+          navigate("/mypage");
+        })
+        .catch((error) => {
+          console.log(error.message);
+        });
+    });
+  };
+
   return (
     <>
       <GameTitleContainer>
         <GameTitle>The War of Rose</GameTitle>
-        <GameTitle>: Score Tracker</GameTitle>
+        <GameTitle>Score Tracker</GameTitle>
       </GameTitleContainer>
-      <GoogleLoginContainer>
+      <GoogleLoginContainer onClick={handleGoogleLogin}>
         <GoogleLogoBtn></GoogleLogoBtn>
         <GoogleLoginBtn>Google Login</GoogleLoginBtn>
       </GoogleLoginContainer>
