@@ -22,12 +22,12 @@ export const GoogleLoginContainer = styled.div`
 export const GoogleLogoBtn = styled.button`
   background-color: white;
   border: none;
-  padding: 25.5px;
+  padding: 22px;
   background-image: url("/google_logo.png");
 `;
 export const GoogleLoginBtn = styled.button`
   background-color: #4285f4;
-  height: 51px;
+  height: 44px;
   width: 200px;
   color: white;
   border: none;
