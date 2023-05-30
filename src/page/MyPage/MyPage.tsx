@@ -1,10 +1,10 @@
+import { GameTitleContainer, GameTitle } from "../Home/HomeStyle";
 import {
-  GameTitleContainer,
-  GameTitle,
-  GoogleLoginContainer,
-  GoogleLogoBtn,
-  GoogleLoginBtn,
-} from "../Home/HomeStyle";
+  StartButtonContainer,
+  LogoutButtonContainer,
+  StartBtn,
+  GoogleLogoutBtn,
+} from "./MyPageStyle";
 
 function MyPage() {
   const userName = sessionStorage.getItem("userName");
@@ -14,7 +14,12 @@ function MyPage() {
         <GameTitle>{userName}님</GameTitle>
         <GameTitle>Enjoy Your Day</GameTitle>
       </GameTitleContainer>
-      <GoogleLoginContainer></GoogleLoginContainer>
+      <StartButtonContainer>
+        <StartBtn>Get Score</StartBtn>
+      </StartButtonContainer>
+      <LogoutButtonContainer>
+        <GoogleLogoutBtn>log out</GoogleLogoutBtn>
+      </LogoutButtonContainer>
     </>
   );
 }
