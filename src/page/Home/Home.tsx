@@ -16,8 +16,6 @@ import {
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
-// Initialize Firebase Authentication and get a reference to the service
-
 function Home() {
   const navigate = useNavigate();
 
@@ -30,9 +28,11 @@ function Home() {
           // This gives you a Google Access Token. You can use it to access the Google API.
           const credential = GoogleAuthProvider.credentialFromResult(result);
           const token = credential?.accessToken;
-
           // The signed-in user info.
           const user = result.user;
+          if (user.displayName) {
+            sessionStorage.setItem("userName", user.displayName);
+          }
           navigate("/mypage");
         })
         .catch((error) => {
