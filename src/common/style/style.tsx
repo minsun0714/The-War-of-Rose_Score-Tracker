@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { FontURL } from "../type/type";
+import { FontURL } from "../type/enum";
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
