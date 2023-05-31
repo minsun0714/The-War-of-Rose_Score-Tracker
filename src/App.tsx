@@ -4,6 +4,7 @@ import Header from "./common/components/Header/Header";
 import Home from "./page/Home/Home";
 import MyPage from "./page/MyPage/MyPage";
 import PrivateRoutes from "./common/components/PrivateRoutes/PrivateRoutes";
+import GameResult from "./page/GameResult/GameResult";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route element={<PrivateRoutes />}>
           <Route path='/mypage' element={<MyPage />} />
+          <Route path='/score' element={<GameResult />} />
         </Route>
         <Route path='/' element={<Home />} />
       </Routes>
