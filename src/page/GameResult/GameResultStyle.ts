@@ -13,7 +13,7 @@ export const GameBoardElement = styled.td`
   padding: 1.5px 12px 1.5px 12px;
   background-image: linear-gradient(20deg, #955959, #813f3f);
   border-radius: 5px;
-  color: transparent;
+  /* color: transparent; */
 `;
 
 export const UserWrapper = styled.div`

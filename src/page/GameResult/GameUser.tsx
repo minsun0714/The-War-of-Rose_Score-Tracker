@@ -1,12 +1,12 @@
 import { UserWrapper, UserName, UserImg } from "./GameResultStyle";
 import { UserProp } from "./type";
 
-function User({ src }: UserProp) {
+function User({ src, userNumber }: UserProp) {
   return (
     <>
       <UserWrapper>
         <UserImg src={src}></UserImg>
-        <UserName>user</UserName>
+        <UserName>user {userNumber}</UserName>
       </UserWrapper>
     </>
   );

@@ -15,9 +15,9 @@ function GameResult() {
       <ReloadWrapper>
         <ReloadImg src={GameResultImgURL.reloadImg}></ReloadImg>
       </ReloadWrapper>
-      <User src={GameResultImgURL.user1} />
+      <User src={GameResultImgURL.user1} userNumber={1} />
       <GameBoardContainer />
-      <User src={GameResultImgURL.user2} />
+      <User src={GameResultImgURL.user2} userNumber={2} />
       <GetScoreBtnWrapper>
         <GetScoreBtn>{GET_SCORE_BUTTON_PHRASE}</GetScoreBtn>
       </GetScoreBtnWrapper>
