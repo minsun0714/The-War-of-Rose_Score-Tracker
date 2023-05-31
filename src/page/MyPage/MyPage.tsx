@@ -17,6 +17,7 @@ function MyPage() {
     signOut(auth)
       .then(() => {
         navigate("/");
+        sessionStorage.clear();
       })
       .catch((error) => {
         console.log(error);
