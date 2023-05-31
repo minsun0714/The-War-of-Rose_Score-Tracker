@@ -1,8 +1,8 @@
 import {
   GameBoardWrapper,
-  GameBoardElement,
+  GameBoardCell,
   GameBoard,
-  GameCell,
+  GameBoardRow,
 } from "./GameResultStyle";
 import { GameResultStyle } from "../../common/style/style";
 
@@ -12,13 +12,15 @@ function GameBoardContainer() {
     <GameBoardWrapper>
       <GameResultStyle />
       <GameBoard>
-        {table.map((row: number[]) => {
+        {table.map((row: number[], rowIdx: number) => {
           return (
-            <GameCell>
-              {row.map((element: number) => (
-                <GameBoardElement>0</GameBoardElement>
-              ))}
-            </GameCell>
+            <tbody key={rowIdx}>
+              <GameBoardRow>
+                {row.map((element: number, elementIdx: number) => (
+                  <GameBoardCell key={elementIdx}>0</GameBoardCell>
+                ))}
+              </GameBoardRow>
+            </tbody>
           );
         })}
       </GameBoard>
