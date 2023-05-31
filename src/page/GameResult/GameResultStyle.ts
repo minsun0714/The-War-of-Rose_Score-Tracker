@@ -9,13 +9,6 @@ export const GameBoardWrapper = styled.div`
   font-size: 22px;
 `;
 
-export const GameBoardElement = styled.td`
-  padding: 1.5px 12px 1.5px 12px;
-  background-image: linear-gradient(20deg, #955959, #813f3f);
-  border-radius: 5px;
-  /* color: transparent; */
-`;
-
 export const UserWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -61,4 +54,11 @@ export const UserImg = styled.img`
 
 export const GameBoard = styled.table``;
 
-export const GameCell = styled.tr``;
+export const GameBoardRow = styled.tr``;
+
+export const GameBoardCell = styled.td`
+  padding: 1.5px 12px 1.5px 12px;
+  background-image: linear-gradient(20deg, #955959, #813f3f);
+  border-radius: 5px;
+  color: transparent;
+`;
