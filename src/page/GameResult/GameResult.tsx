@@ -1,11 +1,27 @@
-import styled from "styled-components";
-import { GameResultStyle } from "../../common/style/style";
+import {
+  ReloadWrapper,
+  GetScoreBtnWrapper,
+  GetScoreBtn,
+  ReloadImg,
+} from "./GameResultStyle";
+import { GameResultImgURL } from "../../common/type/enum";
+import GameBoardContainer from "./GameBoard";
+import User from "./GameUser";
+import { GET_SCORE_BUTTON_PHRASE } from "../../common/constant";
 
 function GameResult() {
   return (
-    <div>
-      <GameResultStyle />
-    </div>
+    <>
+      <ReloadWrapper>
+        <ReloadImg src={GameResultImgURL.reloadImg}></ReloadImg>
+      </ReloadWrapper>
+      <User src={GameResultImgURL.user1} />
+      <GameBoardContainer />
+      <User src={GameResultImgURL.user2} />
+      <GetScoreBtnWrapper>
+        <GetScoreBtn>{GET_SCORE_BUTTON_PHRASE}</GetScoreBtn>
+      </GetScoreBtnWrapper>
+    </>
   );
 }
 export default GameResult;
