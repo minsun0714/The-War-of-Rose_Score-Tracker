@@ -1,4 +1,11 @@
+import styled from "styled-components";
+import { GameResultStyle } from "../../common/style/style";
+
 function GameResult() {
-  return null;
+  return (
+    <div>
+      <GameResultStyle />
+    </div>
+  );
 }
 export default GameResult;
