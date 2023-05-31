@@ -24,6 +24,10 @@ function MyPage() {
       });
   };
 
+  const handleGetScore = () => {
+    navigate("/score");
+  };
+
   return (
     <>
       <GameTitleContainer>
@@ -31,7 +35,7 @@ function MyPage() {
         <GameTitle>Enjoy Your Day</GameTitle>
       </GameTitleContainer>
       <StartButtonContainer>
-        <StartBtn>Get Score</StartBtn>
+        <StartBtn onClick={handleGetScore}>Get Score</StartBtn>
       </StartButtonContainer>
       <LogoutButtonContainer>
         <GoogleLogoutBtn onClick={handleGoogleLogout}>log out</GoogleLogoutBtn>
