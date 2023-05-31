@@ -6,8 +6,8 @@ type UserName = {
 };
 
 const initialUserNameState: UserName = {
-  userName1: undefined,
-  userName2: undefined,
+  userName1: "user1",
+  userName2: "user2",
 };
 
 export const username = createSlice({
