@@ -9,3 +9,8 @@ export type UserProp = {
   src: UserImg;
   userName?: string;
 };
+
+export type UserWrpperProps = {
+  onClick: () => void;
+  isMyTurn: boolean;
+};
