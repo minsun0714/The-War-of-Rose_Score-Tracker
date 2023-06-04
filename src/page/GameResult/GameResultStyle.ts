@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { StartButtonContainer, StartBtn } from "../MyPage/MyPageStyle";
+import { UserWrpperProps } from "./type";
 
 export const GameBoardWrapper = styled.div`
   background-color: #e1d8d8;
@@ -9,12 +10,14 @@ export const GameBoardWrapper = styled.div`
   font-size: 22px;
 `;
 
-export const UserWrapper = styled.div`
+export const UserWrapper = styled.div<UserWrpperProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 55px;
   font-size: 30px;
+  background-image: ${(props) =>
+    props.isMyTurn ? "linear-gradient(150deg, white, pink)" : "transparent"};
 `;
 export const UserName = styled.span`
   margin-left: 15px;
@@ -60,5 +63,5 @@ export const GameBoardCell = styled.td`
   padding: 1.5px 12px 1.5px 12px;
   background-image: linear-gradient(20deg, #955959, #813f3f);
   border-radius: 5px;
-  color: transparent;
+  /* color: transparent; */
 `;
