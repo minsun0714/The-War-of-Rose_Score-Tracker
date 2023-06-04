@@ -10,7 +10,7 @@ const initialUserNameState: UserName = {
   userName2: "user2",
 };
 
-export const username = createSlice({
+export const userNames = createSlice({
   name: "userNameReducer",
   initialState: initialUserNameState,
   reducers: {
@@ -23,5 +23,5 @@ export const username = createSlice({
   },
 });
 
-export const usernameStore = configureStore({ reducer: username.reducer });
-export const { addUserName1, addUserName2 } = username.actions;
+export const userNameStore = configureStore({ reducer: userNames.reducer });
+export const { addUserName1, addUserName2 } = userNames.actions;
