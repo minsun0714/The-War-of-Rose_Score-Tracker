@@ -15,7 +15,7 @@ function User({ userNumber, src, userName }: UserProp) {
   console.log(userNumber, currentGameTurn === userNumber);
   return (
     <>
-      <UserWrapper onClick={onClick}>
+      <UserWrapper onClick={onClick} isMyTurn={currentGameTurn === userNumber}>
         <UserImg src={src}></UserImg>
         <UserName>{userName}</UserName>
       </UserWrapper>
