@@ -12,7 +12,6 @@ function User({ userNumber, src, userName }: UserProp) {
   const onClick = () => {
     dispatch(getWhoseTurnItIs({ tapTurn: userNumber }));
   };
-  console.log(userNumber, currentGameTurn === userNumber);
   return (
     <>
       <UserWrapper onClick={onClick} isMyTurn={currentGameTurn === userNumber}>

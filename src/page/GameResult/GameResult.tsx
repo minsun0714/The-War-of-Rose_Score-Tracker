@@ -8,7 +8,6 @@ import { RootState } from "../../store/rootStore";
 
 function GameResult() {
   const userNames = useSelector((store: RootState) => store.userNames);
-  console.log(userNames);
   return (
     <>
       <User
