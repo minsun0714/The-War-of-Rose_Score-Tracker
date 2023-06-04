@@ -1,9 +1,4 @@
-import {
-  ReloadWrapper,
-  GetScoreBtnWrapper,
-  GetScoreBtn,
-  ReloadImg,
-} from "./GameResultStyle";
+import { GetScoreBtnWrapper, GetScoreBtn } from "./GameResultStyle";
 import { GameResultImgURL } from "../../common/type/enum";
 import GameBoardContainer from "./GameBoard";
 import User from "./GameUser";
@@ -16,9 +11,6 @@ function GameResult() {
   console.log(userNames);
   return (
     <>
-      <ReloadWrapper>
-        <ReloadImg src={GameResultImgURL.reloadImg}></ReloadImg>
-      </ReloadWrapper>
       <User
         userNumber={1}
         src={GameResultImgURL.user1}
