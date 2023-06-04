@@ -36,7 +36,7 @@ export const StartBtn = styled(GoogleLoginBtn)`
 `;
 
 export const Modal = styled(Dialog)`
-  margin: 0 0 230px 20px;
+  margin: 0 0 90px 20px;
   width: 320px;
 `;
 
