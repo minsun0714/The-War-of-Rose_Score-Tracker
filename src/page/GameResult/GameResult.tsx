@@ -9,19 +9,27 @@ import GameBoardContainer from "./GameBoard";
 import User from "./GameUser";
 import { GET_SCORE_BUTTON_PHRASE } from "../../common/constant";
 import { useSelector } from "react-redux";
+import { RootState } from "../../store/rootStore";
 
 function GameResult() {
-  const userNames = useSelector(
-    (store: { userName1: string; userName2: string }) => store
-  );
+  const userNames = useSelector((store: RootState) => store.userNames);
+  console.log(userNames);
   return (
     <>
       <ReloadWrapper>
         <ReloadImg src={GameResultImgURL.reloadImg}></ReloadImg>
       </ReloadWrapper>
-      <User src={GameResultImgURL.user1} userName={userNames.userName1} />
+      <User
+        userNumber={1}
+        src={GameResultImgURL.user1}
+        userName={userNames.userName1}
+      />
       <GameBoardContainer />
-      <User src={GameResultImgURL.user2} userName={userNames.userName2} />
+      <User
+        userNumber={2}
+        src={GameResultImgURL.user2}
+        userName={userNames.userName2}
+      />
       <GetScoreBtnWrapper>
         <GetScoreBtn>{GET_SCORE_BUTTON_PHRASE}</GetScoreBtn>
       </GetScoreBtnWrapper>
