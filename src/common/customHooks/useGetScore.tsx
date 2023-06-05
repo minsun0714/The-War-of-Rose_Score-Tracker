@@ -8,7 +8,7 @@ export const useGetScore = (
   let score1 = 0;
   let score2 = 0;
 
-  const dfs = (i: number, j: number, userNumber?: number) => {
+  const getUsersScoreByDFS = (i: number, j: number, userNumber?: number) => {
     if (i < 0 || i >= 9 || j < 0 || j >= 9) return false;
     if (deepCopiedTable[i][j] === 0) return false;
     if (userNumber && deepCopiedTable[i][j] !== userNumber) return false;
@@ -27,10 +27,10 @@ export const useGetScore = (
 
     deepCopiedTable[i][j] = 0;
 
-    dfs(i - 1, j, userNumber);
-    dfs(i + 1, j, userNumber);
-    dfs(i, j - 1, userNumber);
-    dfs(i, j + 1, userNumber);
+    getUsersScoreByDFS(i - 1, j, userNumber);
+    getUsersScoreByDFS(i + 1, j, userNumber);
+    getUsersScoreByDFS(i, j - 1, userNumber);
+    getUsersScoreByDFS(i, j + 1, userNumber);
 
     return [score1, score2];
   };
@@ -38,7 +38,7 @@ export const useGetScore = (
 
   for (let i = 0; i < 9; i++) {
     for (let j = 0; j < 9; j++) {
-      const result = dfs(i, j);
+      const result = getUsersScoreByDFS(i, j);
       if (result) {
         console.log(i, j, result);
         let [score1, score2] = result;
