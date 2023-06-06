@@ -1,12 +1,12 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { userNames } from "./usernameStore";
 import { tapTurn } from "./TapTurnStore";
-import { GameBoard } from "./BoardStore";
+import { GameBoardStore } from "./BoardStore";
 
 const rootReducer = combineReducers({
   userNames: userNames.reducer,
   tapTurnStore: tapTurn.reducer,
-  gameBoardStore: GameBoard.reducer,
+  gameBoardStore: GameBoardStore.reducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;
