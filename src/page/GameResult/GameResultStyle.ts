@@ -30,7 +30,7 @@ export const ReloadWrapper = styled.div`
 `;
 
 export const GetScoreBtnWrapper = styled(StartButtonContainer)`
-  margin: 0;
+  margin: 10px;
 `;
 
 export const GetScoreBtn = styled(StartBtn)`
