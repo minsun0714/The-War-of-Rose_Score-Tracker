@@ -8,7 +8,6 @@ import { GameResultStyle } from "../../common/style/style";
 import { useDispatch, useSelector } from "react-redux";
 import { getGameBoard } from "../../store/BoardStore";
 import { RootState } from "../../store/rootStore";
-import { useGetScore } from "../../common/customHooks/useGetScore";
 
 function GameBoardContainer() {
   const dispatch = useDispatch();
@@ -18,8 +17,6 @@ function GameBoardContainer() {
   const onClick = (rowIdx: number, columnIdx: number) => {
     dispatch(getGameBoard({ currentUser: tapTurn, rowIdx, columnIdx }));
   };
-
-  const finalScore = useGetScore(table);
 
   return (
     <GameBoardWrapper>
