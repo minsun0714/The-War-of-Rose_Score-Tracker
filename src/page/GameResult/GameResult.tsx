@@ -5,9 +5,16 @@ import User from "./GameUser";
 import { GET_SCORE_BUTTON_PHRASE } from "../../common/constant";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/rootStore";
+import { useGetScore } from "../../common/customHooks/useGetScore";
 
 function GameResult() {
   const userNames = useSelector((store: RootState) => store.userNames);
+  const table = useSelector((store: RootState) => store.gameBoardStore);
+  const finalScore = useGetScore(table);
+  const onClickShowResult = () => {
+    console.log("최종 점수", finalScore);
+  };
+
   return (
     <>
       <User
@@ -22,7 +29,9 @@ function GameResult() {
         userName={userNames.userName2}
       />
       <GetScoreBtnWrapper>
-        <GetScoreBtn>{GET_SCORE_BUTTON_PHRASE}</GetScoreBtn>
+        <GetScoreBtn onClick={onClickShowResult}>
+          {GET_SCORE_BUTTON_PHRASE}
+        </GetScoreBtn>
       </GetScoreBtnWrapper>
     </>
   );
