@@ -12,7 +12,7 @@ const initialGameBoardState: GameBoard = [...Array(9)].map((_) =>
   [...Array(9)].map((_) => 0)
 );
 
-export const GameBoard = createSlice({
+export const GameBoardStore = createSlice({
   name: "GameBoardReducer",
   initialState: initialGameBoardState,
   reducers: {
@@ -30,5 +30,7 @@ export const GameBoard = createSlice({
   },
 });
 
-export const gameBoardStore = configureStore({ reducer: GameBoard.reducer });
-export const { getGameBoard } = GameBoard.actions;
+export const gameBoardStore = configureStore({
+  reducer: GameBoardStore.reducer,
+});
+export const { getGameBoard } = GameBoardStore.actions;
