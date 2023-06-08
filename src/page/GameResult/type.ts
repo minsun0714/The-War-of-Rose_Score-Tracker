@@ -14,3 +14,8 @@ export type UserWrpperProps = {
   onClick: () => void;
   isMyTurn: boolean;
 };
+
+export type GameBoardCellProps = {
+  key: string;
+  onClick: () => void;
+};
