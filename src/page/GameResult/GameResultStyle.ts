@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { StartButtonContainer, StartBtn } from "../MyPage/MyPageStyle";
+import { AvatarImg, UserNameWrapper } from "../MyPage/MyPageStyle";
 import { UserWrpperProps, GameBoardCellProps } from "./type";
+import DialogContent from "@mui/material/DialogContent";
 
 export const GameBoardWrapper = styled.div`
   background-color: #e1d8d8;
@@ -73,4 +75,48 @@ export const GameBoardCell = styled.td<GameBoardCellProps>`
   }};
   border-radius: 5px;
   color: transparent;
+`;
+
+export const ScoreTitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  height: 45px;
+  margin-top: 10px;
+`;
+
+export const ScoreTitle = styled(DialogContent)`
+  display: flex;
+  flex-direction: row;
+  background-color: #955959;
+  color: #e1d8d8;
+`;
+
+export const ScoreWrapper = styled(UserNameWrapper)`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const UserScoreWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -10px;
+`;
+
+export const AvatarImgScore = styled(AvatarImg)`
+  height: 40px;
+  width: 44px;
+`;
+
+export const UserNameModal = styled.span`
+  font-size: 14px;
+  margin-top: -8px;
+`;
+
+export const Score = styled.span`
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: -8px;
+  text-decoration: none;
 `;
