@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { StartButtonContainer, StartBtn } from "../MyPage/MyPageStyle";
-import { UserWrpperProps } from "./type";
+import { UserWrpperProps, GameBoardCellProps } from "./type";
 
 export const GameBoardWrapper = styled.div`
   background-color: #e1d8d8;
@@ -59,9 +59,18 @@ export const GameBoard = styled.table``;
 
 export const GameBoardRow = styled.tr``;
 
-export const GameBoardCell = styled.td`
+export const GameBoardCell = styled.td<GameBoardCellProps>`
   padding: 1.5px 12px 1.5px 12px;
-  background-image: linear-gradient(20deg, #955959, #813f3f);
+  background-image: ${(props) => {
+    switch (props.children) {
+      case 1:
+        return "linear-gradient(200deg, red, red)";
+      case 2:
+        return "linear-gradient(150deg, white, whitesmoke)";
+      default:
+        return "linear-gradient(20deg, #955959, #813f3f)";
+    }
+  }};
   border-radius: 5px;
   color: transparent;
 `;
