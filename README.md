@@ -5,6 +5,12 @@
 # 사용 기술 스택
 React 18, Typescript, react-router-dom 6, Redux-toolkit, styled-components, Lodash(deep copy) 등
 
+# 점수 계산 알고리즘
+<ul>
+  <li>깊이 우선 탐색 (DFS) 알고리즘 사용</li>
+  <li>lodash의 deep copy 사용: 함수를 호출했을 때 원본 배열의 원소가 0으로 바뀌는 것을 방지</li>
+</ul>
+
 # 기획 의도
 보드게임 장미전쟁 한 라운드가 종료될 때마다 일일히 점수 계산하는 것이 번거로워서 만들었습니다.
 
