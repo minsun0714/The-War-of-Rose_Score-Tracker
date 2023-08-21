@@ -16,7 +16,7 @@ React 18, Typescript, react-router-dom 6, Redux-toolkit, styled-components, Loda
 # 사용 방법
 (1) 신나고 즐겁고 흥겹게 보드게임 장미전쟁을 play합니다.
 
-(2) 한 라운드가 끝나고 이제 점수를 계산해야 하나요? [링크](https://rose-war-score-tracker.web.app)를 클릭해주세요.
+(2) 한 라운드가 끝나고 이제 점수를 계산해야 하나요? 모바일 환경에서 [링크](https://rose-war-score-tracker.web.app)를 클릭해주세요.
 
 (3) 구글 로그인을 하고 Get Score 버튼을 클릭합니다.
 
