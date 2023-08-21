@@ -2,6 +2,8 @@
 보드게임 장미전쟁 score tracker
 (2023.05.30-진행 중)
 
+[velog 시리즈](https://velog.io/@jasmine0714/series/%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%A5%EB%AF%B8%EC%A0%84%EC%9F%81-%EB%B3%B4%EB%93%9C%EA%B2%8C%EC%9E%84-score-tracker-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+
 # 사용 기술 스택
 React 18, Typescript, react-router-dom 6, Redux-toolkit, styled-components, Lodash(deep copy) 등
 
@@ -13,6 +15,7 @@ React 18, Typescript, react-router-dom 6, Redux-toolkit, styled-components, Loda
 
 # 기획 의도
 보드게임 장미전쟁 한 라운드가 종료될 때마다 일일히 점수 계산하는 것이 번거로워서 만들었습니다.
+
 
 # 장미 전쟁? 그게 뭔가요?
 제가 가장 좋아하는 보드게임입니다. 핵꿀잼!
