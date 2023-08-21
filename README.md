@@ -15,6 +15,8 @@ React 18, Typescript, react-router-dom 6, Redux-toolkit, styled-components, Loda
 
 # 사용 방법
 (1) 신나고 즐겁고 흥겹게 보드게임 장미전쟁을 play합니다.
+![스크린샷 2023-08-21 오전 10 48 07](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/6e438a5b-dbd8-421a-be37-02c8e715376a)
+
 
 (2) 한 라운드가 끝나고 이제 점수를 계산해야 하나요? 모바일 환경에서 [링크](https://rose-war-score-tracker.web.app)를 클릭해주세요.
 
@@ -25,6 +27,8 @@ React 18, Typescript, react-router-dom 6, Redux-toolkit, styled-components, Loda
 (5) 게임 결과와 동일하게 보드에서 cell을 클릭해주세요. 클릭한 닉네임에 따라 cell 색이 바뀝니다.
 
 (6) 점수를 확인하세요!
+![스크린샷 2023-08-21 오전 10 48 46](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/551a40d9-23c9-47a6-bda1-8d8a0282ccbe)
+
 
 # 추후 개선사항
 (1) 새로고침 버튼을 추가할 예정입니다.
