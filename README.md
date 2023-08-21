@@ -19,7 +19,7 @@ React 18, Typescript, react-router-dom 6, Redux-toolkit, styled-components, Loda
 ![스크린샷 2023-08-21 오전 10 48 07](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/6e438a5b-dbd8-421a-be37-02c8e715376a)
 
 
-(2) 한 라운드가 끝나고 이제 점수를 계산해야 하나요? 모바일 환경에서 [링크](https://rose-war-score-tracker.web.app)를 클릭해주세요. (PC 환경에서는 아직 반응형 작업 진행 중이므로, 불가피하게 PC 환경을 이용해야할 경우 경우 개발자 모드에서 모바일 뷰를 클릭해주세요.)
+(2) 한 라운드가 끝나고 이제 점수를 계산해야 하나요? 모바일 환경에서 [링크](https://rose-war-score-tracker.web.app)를 클릭해주세요. (PC 환경에서는 아직 반응형 작업 진행 중이므로, 불가피하게 PC 환경을 이용해야할 경우 개발자 모드에서 모바일 뷰를 클릭해주세요.)
 
 ![스크린샷 2023-08-21 오전 10 53 35](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/ce222de8-da72-48cd-a4d7-bd0838c92a4d)
 
