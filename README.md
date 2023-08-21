@@ -14,19 +14,29 @@ React 18, Typescript, react-router-dom 6, Redux-toolkit, styled-components, Loda
 [장미전쟁 게임 규칙 유튜브 설명 보기](https://www.youtube.com/watch?v=ZTNB4i2n3Dk)
 
 # 사용 방법
-(1) 신나고 즐겁고 흥겹게 보드게임 장미전쟁을 play합니다.
+<div>(1) 신나고 즐겁고 흥겹게 보드게임 장미전쟁을 play합니다.</div>
+
 ![스크린샷 2023-08-21 오전 10 48 07](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/6e438a5b-dbd8-421a-be37-02c8e715376a)
 
 
-(2) 한 라운드가 끝나고 이제 점수를 계산해야 하나요? 모바일 환경에서 [링크](https://rose-war-score-tracker.web.app)를 클릭해주세요.
+(2) 한 라운드가 끝나고 이제 점수를 계산해야 하나요? 모바일 환경에서 [링크](https://rose-war-score-tracker.web.app)를 클릭해주세요. (PC 환경에서는 아직 반응형 작업 진행 중이므로, 불가피할 경우 개발자 모드에서 모바일 뷰를 클릭해주세요.)
+
+![스크린샷 2023-08-21 오전 10 53 35](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/ce222de8-da72-48cd-a4d7-bd0838c92a4d)
 
 (3) 구글 로그인을 하고 Get Score 버튼을 클릭합니다.
 
-(4) 2명 player의 닉네임을 입력하세요.
+<div>(4) 2명 player의 닉네임을 입력 후, Start 버튼을 클릭하세요.</div>
 
-(5) 게임 결과와 동일하게 보드에서 cell을 클릭해주세요. 클릭한 닉네임에 따라 cell 색이 바뀝니다.
+![닉네임 입력](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/68fbf537-0d27-4acd-a0d0-187596f03552)
 
-(6) 점수를 확인하세요!
+
+<div>(5) 게임 결과와 동일하게 보드에서 cell을 클릭해주세요. 클릭한 닉네임에 따라 cell 색이 바뀝니다.</div>
+
+![셀 클릭](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/e914a968-9ba2-4749-8f4d-732a0288b4d1)
+
+
+<div>(6) 점수를 확인하세요!</div>
+
 ![스크린샷 2023-08-21 오전 10 48 46](https://github.com/minsun0714/The-War-of-Rose_Score-Tracker/assets/117507731/551a40d9-23c9-47a6-bda1-8d8a0282ccbe)
 
 
